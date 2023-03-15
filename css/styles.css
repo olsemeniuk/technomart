@@ -2,8 +2,29 @@
     CUSTOM PROPERTIES
   ====================*/
 :root {
-  --prime-font: ;
-  --basic-color: ;
+  /* fonts */
+  --main-font: 'PT Sans', sans-serif;
+  --accent-font: 'Cuprum', sans-serif;
+
+  /* colors */
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-dark: #293449;
+  --lighter-dark: #32425c;
+  --basic-grey: #f7f2ec;
+  --light-grey: #f9f5f0;
+  --basic-light: #f3f7f8;
+  --accent: #ee3643;
+  --darker-accent: #ca2b36;
+  --darkest-accent: #ba2731;
+  --accent-text: #ffd180;
+  --yellow: #ffbf47;
+  --blue: #3bbce3;
+  --pink: #dc91d8;
+  --light-green: #8Ed78f;
+  --green: #5fbb2d;
+  --dark-green: #63a63e;
+  --darkest-green: #508534;
 }
 
 
@@ -33,8 +54,8 @@ body {
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
   min-height: 100%;
-  font: var(--prime-font);
-  color: var(--basic-color);
+  font: var(--main-font);
+  color: var(--lighter-dark);
   background-color: #ffffff;
   overflow-x: hidden;
 }
