@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <title>Document</title>
+  <meta name="description" content="Интернет-магазин строительных материалов и инструментов для ремонта">
+  <title>Техномарт</title>
 
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,8 +34,77 @@
 
 <body>
 
-  <header class="header"></header>
-  <main class="main"></main>
+  <header class="header">
+    <div class="header__top-row">
+      <div class="container">
+        <div class="header__top-inner">
+          <a class="logo header__logo" href="#">
+            <img class="logo__img" width="220" height="47" src="images/logo.png" alt="Логотип Техномарт.">
+          </a>
+          <form class="search-form" action="#" method="get">
+            <label for="search-input" class="visually-hidden">Поиск</label>
+            <input class="search-form__input" id="search-input" type="search" name="search" placeholder="Поиск:"
+              required>
+            <button class="visually-hidden" type="submit">Искать</button>
+          </form>
+          <ul class="user-nav">
+            <li class="user-nav__item">
+              <a class="user-nav__link nav-link user-nav__link-bookmarks" href="#">Закладки: 0</a>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link nav-link user-nav__link-cart" href="#">Корзина: 0</a>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link nav-link user-nav__link-order" href="#">Оформить заказ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header__content">
+      <div class="container">
+        <div class="header__content-inner">
+          <p class="header__text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <address class="header__address">
+            <a class="header__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <p class="header__address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </address>
+          <p class="header__buttons">
+            <a class="header__btn header__btn-login" href="#">Войти</a>
+            <a class="header__btn header__btn-registration" href="#">Регистрация</a>
+          </p>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Компания</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Каталог</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Новости</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Спецпредложения</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Доставка</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    
+  </main>
   <footer class="footer"></footer>
 
   <!-- scripts and js libs -->
