@@ -261,6 +261,20 @@ textarea {
   background-image: url("../images/icons/cart-icon.png");
 }
 
+.cart-link--active {
+  background-color: var(--accent);
+}
+
+.cart-link--active:hover {
+  background-color: var(--accent);
+  filter: brightness(0.9);
+}
+
+.cart-link--active:active {
+  background-color: var(--accent);
+  filter: brightness(0.8);
+}
+
 .order-link {
   padding: 12px 22px 13px;
   background-color: #63a63e;
@@ -268,7 +282,7 @@ textarea {
 
 .order-link:focus {
   outline: 3px solid var(--basic-light);
-  outline-offset: -3px;
+  outline-offset: -5px;
 }
 
 .order-link:hover {
