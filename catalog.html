@@ -38,24 +38,24 @@
     <div class="header__top-row">
       <div class="container">
         <div class="header__top-inner">
-          <a class="header__logo logo" href="#">
-            <img class="logo__img" width="220" height="47" src="images/logo.png" alt="Логотип Техномарт.">
+          <a class="header__logo logo" href="index.html">
+            <img width="220" height="47" src="images/logo.png" alt="Логотип Техномарт.">
           </a>
           <form class="search-form" action="#" method="get">
-            <label for="search-input" class="visually-hidden">Поиск</label>
+            <label class="visually-hidden" for="search-input">Поиск</label>
             <input class="search-form__input" id="search-input" type="search" name="search" placeholder="Поиск:"
               required>
-            <button class="visually-hidden" type="submit">Искать</button>
+            <button class="visually-hidden" type="submit" tabindex="-1">Искать</button>
           </form>
-          <ul class="user-nav">
+          <ul class="inline-list">
             <li class="user-nav__item">
-              <a class="user-nav__link user-nav__bookmarks" href="#">Закладки: 0</a>
+              <a class="iconed-link bookmarks-link nav-link" href="#">Закладки: 0</a>
             </li>
             <li class="user-nav__item">
-              <a class="user-nav__link user-nav__cart user-nav__cart--active" href="#">Корзина: 0</a>
+              <a class="iconed-link cart-link nav-link" href="#">Корзина: 0</a>
             </li>
             <li class="user-nav__item">
-              <a class="user-nav__link user-nav__order" href="#">Оформить заказ</a>
+              <a class="order-link nav-link" href="#">Оформить заказ</a>
             </li>
           </ul>
         </div>
@@ -69,41 +69,36 @@
             <a class="header__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
             <p class="header__address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </address>
-          <p class="header__user user">
-          <p class="user__name">
-            <span class="user__name-text">Равшан Джамшутович</span>
-            <button class="user__out-button">
-              <span class="visually-hidden">Вийти из профиля</span>
-            </button>
-          </p>
-          <p class="user__links">
-            <a class="user__link" href="#">Мои заказы</a>
-            <a class="user__link" href="#">Личный кабинет</a>
-          </p>
-          </p>
+          <div class="user">
+            <a class="user__profile" href="#">Равшан Джамшутович</a>
+            <p class="user__links">
+              <a class="user__link" href="#">Мои заказы</a>
+              <a class="user__link" href="#">Личный кабинет</a>
+            </p>
+          </div>
         </div>
         <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Главная</a>
+          <ul class="navigation__list inline-list">
+            <li>
+              <a class="navigation__link nav-link" href="#">Главная</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Компания</a>
+            <li>
+              <a class="navigation__link nav-link" href="#">Компания</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Каталог</a>
+            <li>
+              <a class="navigation__link nav-link" href="#">Каталог</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Новости</a>
+            <li>
+              <a class="navigation__link nav-link" href="#">Новости</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Спецпредложения</a>
+            <li>
+              <a class="navigation__link nav-link" href="#">Спецпредложения</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Доставка</a>
+            <li>
+              <a class="navigation__link nav-link" href="#">Доставка</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Контакты</a>
+            <li>
+              <a class="navigation__link nav-link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -345,7 +340,10 @@
         <div class="container">
           <h2 class="about-product__title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
           <p class="about-product__text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления
-            и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+            и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические
+            перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
+            ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и
+            ударная дрель.</p>
         </div>
       </section>
     </div>
@@ -359,19 +357,19 @@
           </a>
           <ul class="footer__nav">
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Компания</a>
+              <a class="footer__nav-link nav-link" href="#">Компания</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Новости</a>
+              <a class="footer__nav-link nav-link" href="#">Новости</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Каталог</a>
+              <a class="footer__nav-link nav-link" href="#">Каталог</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Доставка</a>
+              <a class="footer__nav-link nav-link" href="#">Доставка</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Контакты</a>
+              <a class="footer__nav-link nav-link" href="#">Контакты</a>
             </li>
           </ul>
         </div>
@@ -382,16 +380,16 @@
           </address>
           <ul class="footer__products">
             <li class="footer__products-item">
-              <a class="footer__products-link" href="#">Материалы</a>
+              <a class="footer__products-link nav-link" href="#">Материалы</a>
             </li>
             <li class="footer__products-item">
-              <a class="footer__products-link" href="#">Техника</a>
+              <a class="footer__products-link nav-link" href="#">Техника</a>
             </li>
             <li class="footer__products-item">
-              <a class="footer__products-link" href="#">Инструмент</a>
+              <a class="footer__products-link nav-link" href="#">Инструмент</a>
             </li>
             <li class="footer__products-item">
-              <a class="footer__products-link" href="#">Спецпредложения</a>
+              <a class="footer__products-link nav-link" href="#">Спецпредложения</a>
             </li>
           </ul>
         </div>
