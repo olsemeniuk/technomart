@@ -21,11 +21,11 @@
   <link rel="manifest" href="manifest.webmanifest">
 
   <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="accent_color">
+  <meta name="theme-color" content="#ee3643">
   <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="accent_color">
+  <meta name="msapplication-navbutton-color" content="#ee3643">
   <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="accent_color">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#ee3643">
 
   <!-- styles and css libs -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -263,32 +263,42 @@
     </section>
     <section class="services">
       <div class="container">
-        <h2 class="services__title">Сервисы</h2>
+        <h2 class="services__title title">Сервисы</h2>
         <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех
           сил, чтобы сделать ваши покупки приятными.</p>
         <div class="tabs">
           <div class="tabs__controls">
-            <button class="tabs__button" type="button">Доставка</button>
-            <button class="tabs__button" type="button">Гарантия</button>
-            <button class="tabs__button" type="button">Кредит</button>
+            <button class="tabs__button tabs__button--active" type="button" data-btn="1" tabindex="-1">Доставка</button>
+            <button class="tabs__button" type="button" data-btn="2">Гарантия</button>
+            <button class="tabs__button" type="button" data-btn="3">Кредит</button>
           </div>
           <div class="tabs__content">
-            <section class="tabs__section tabs__section--delivery">
-              <h3 class="tabs__section-title">Доставка</h3>
-              <p class="tabs__section-text"> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-                бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+            <section class="tabs__section tabs__section--active tabs__section--delivery" data-content="1">
+              <h3 class="tabs__section-title title">Доставка</h3>
+              <p class="tabs__section-text">
+                Мы с удовольствием доставим ваш товар прямо <br>
+                к вашему подъезду совершенно бесплатно! <br>
+                Ведь мы неплохо заработаем, <br>
+                поднимая его на ваш этаж!
+              </p>
             </section>
-            <section class="tabs__section tabs__section--warranty">
-              <h3 class="tabs__section-title">Гарантия</h3>
-              <p class="tabs__section-text">Если купленный у нас товар поломается или заискрит, а также в случае пожара,
-                спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший
-                товар на новый. Дом уж восстановите как-нибудь сами.</p>
+            <section class="tabs__section tabs__section--warranty" data-content="2">
+              <h3 class="tabs__section-title title">Гарантия</h3>
+              <p class="tabs__section-text">
+                Если купленный у нас товар поломается или заискрит, <br>
+                а также в случае пожара, спровоцированного его возгаранием, <br>
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br>
+                сгоревший товар на новый. <br>
+                Дом уж восстановите как-нибудь сами.
+              </p>
             </section>
-            <section class="tabs__section tabs__section--credit">
-              <h3 class="tabs__section-title">Кредит</h3>
-              <p class="tabs__section-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на
-                помощь.</p>
-              <a class="tabs__section-button" href="blank.html">ОТПРАВИТЬ ЗАЯВКУ</a>
+            <section class="tabs__section tabs__section--credit" data-content="3">
+              <h3 class="tabs__section-title title">Кредит</h3>
+              <p class="tabs__section-text">
+                Залезть в долговую яму стало проще! <br>
+                Кредитные консультанты придут вам на помощь.
+              </p>
+              <a class="tabs__section-button button button--primary" href="blank.html">ОТПРАВИТЬ ЗАЯВКУ</a>
             </section>
           </div>
         </div>
@@ -316,7 +326,7 @@
             <div class="contacts__location">
               <p class="contacts__map">
                 <img class="contacts__map-img" width="300" height="158" src="images/map.png"
-                  alt="Карта, на которой отмечена улица Большая Конюшенная 19">
+                  alt="Магазин по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
               </p>
               <a class="contacts__button" href="blank.html">Заблудились? Напишите нам!</a>
             </div>

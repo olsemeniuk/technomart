@@ -48,7 +48,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -1015,9 +1015,6 @@ textarea {
   list-style-type: none;
 }
 
-.producers__item {}
-
-
 .producers__link {
   display: flex;
   justify-content: center;
@@ -1046,6 +1043,137 @@ textarea {
 
 .producers__link:active .producers__logo {
   opacity: 0.3;
+}
+
+
+/* services */
+.services {
+  padding-top: 60px;
+  background-color: var(--basic-light);
+}
+
+.services__title {
+  margin-bottom: 30px;
+  color: var(--basic-black);
+}
+
+.services__text {
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.tabs {
+  display: flex;
+  align-items: flex-start;
+}
+
+.tabs__controls {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 240px;
+  padding: 35px 0;
+}
+
+.tabs__controls::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  background-image: url("../images/tabs/shadow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tabs__button {
+  display: inline-block;
+  padding: 14px 22px 13px;
+  font: 700 21px/30px var(--accent-font);
+  text-align: left;
+  color: var(--basic-white);
+  background-color: var(--basic-dark);
+  border: none;
+  border-top: 1px solid #4d637b;
+}
+
+.tabs__button:not(.tabs__button--active):focus {
+  outline: 5px solid var(--accent);
+  outline-offset: -5px;
+}
+
+.tabs__button:not(.tabs__button--active):hover {
+  background-color: var(--darker);
+  outline: none;
+}
+
+.tabs__button:not(.tabs__button--active):active {
+  opacity: 0.8;
+}
+
+.tabs__button--active {
+  color: var(--basic-dark);
+  background-color: var(--basic-white);
+  border-top-color: transparent;
+  outline: none;
+}
+
+.tabs__content {
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.tabs__section {
+  display: none;
+  min-height: 320px;
+  padding: 35px 0 35px 80px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.tabs__section--active {
+  display: block;
+  animation: opac 0.5s;
+}
+
+.tabs__section-title {
+  margin-bottom: 30px;
+}
+
+.tabs__section-text {
+  max-width: 390px;
+  margin: 0;
+}
+
+.tabs__section--delivery {
+  background-image: url("../images/tabs/blue-car.png");
+  background-size: 468px 261px;
+}
+
+.tabs__section--warranty {
+  background-image: url("../images/tabs/warranty.png");
+  background-size: 389px 283px;
+}
+
+.tabs__section--credit {
+  background-image: url("../images/tabs/credit.png");
+  background-size: 465px 285px;
+}
+
+.tabs__section-button {
+  min-width: 195px;
+  margin-top: 30px;
+}
+
+.tabs__section-button:focus {
+  outline: 3px solid var(--basic-dark);
+  outline-offset: -3px;
+}
+
+.tabs__section-button:hover {
+  outline: none;
 }
 
 
@@ -1237,7 +1365,14 @@ textarea {
 /*====================
     ANIMATIONS
   ==================== */
-
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 
 /*====================

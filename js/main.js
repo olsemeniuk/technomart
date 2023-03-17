@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 
   $('.slider').slick({
     slidesToShow: 1,
@@ -11,4 +11,26 @@ $(function() {
     autoplay: true,
   });
 
+  const tabButton = document.querySelectorAll('.tabs__button'),
+        tabSection = document.querySelectorAll('.tabs__section');
+
+  tabButton.forEach(btn => {
+    btn.addEventListener('click', () => {
+      for(let i = 0; i < tabButton.length; i++) {
+        tabButton[i].classList.remove('tabs__button--active')
+        tabButton[i].setAttribute('tabindex', '0')
+      }
+      btn.classList.add('tabs__button--active')
+      btn.setAttribute('tabindex', '-1')
+
+      for(let i = 0; i < tabSection.length; i++) {
+        tabSection[i].classList.remove('tabs__section--active')
+        if(btn.dataset.btn === tabSection[i].dataset.content) {
+          tabSection[i].classList.add('tabs__section--active')
+        }
+      }
+    })
+  })
+
 });
+
