@@ -29,6 +29,7 @@
 
   <!-- styles and css libs -->
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -107,42 +108,46 @@
       <h2 class="visually-hidden">Услуги и товары</h2>
       <div class="container">
         <div class="goods__inner">
-          <section class="goods-block goods-block--materials">
+          <section class="goods-block goods-block--materials new">
             <h3 class="goods-block__title">Материалы</h3>
-            <a class="goods-block__button" href="blank.html">на любой вкус</a>
+            <a class="goods-block__button button button--transparent" href="blank.html">на любой вкус</a>
           </section>
           <section class="goods-block goods-block--instruments">
             <h3 class="goods-block__title">Инструмент</h3>
-            <a class="goods-block__button" href="blank.html">НА ВСЕ СЛУЧАИ</a>
+            <a class="goods-block__button button button--transparent" href="blank.html">НА ВСЕ СЛУЧАИ</a>
           </section>
           <section class="goods-block goods-block--tech">
             <h3 class="goods-block__title">Техника</h3>
-            <a class="goods-block__button" href="blank.html">для стройки</a>
+            <a class="goods-block__button button button--transparent" href="blank.html">для стройки</a>
           </section>
           <section class="goods-block goods-block--discount">
             <h3 class="goods-block__title">Скидки 50%</h3>
-            <a class="goods-block__button" href="blank.html">На 350 ТОВАРОВ</a>
+            <a class="goods-block__button button button--transparent" href="blank.html">На 350 ТОВАРОВ</a>
           </section>
           <section class="goods-block goods-block--delivery">
             <h3 class="goods-block__title">Доставка</h3>
-            <a class="goods-block__button" href="blank.html">бесплатно</a>
+            <a class="goods-block__button button button--transparent" href="blank.html">бесплатно</a>
           </section>
-          <ul class="slider">
-            <li class="slider__item">
-              <div class="slider__item-info">
-                <h3 class="slider__item-title">Перфораторы</h3>
-                <p class="slider__item-text">Настоящие мужские игрушки</p>
+          <div class="slider">
+            <section class="slider__item" style="background-image: url('images/slider/perforator.jpg')">
+              <div class="slider__item-inner">
+                <div class="slider__item-info">
+                  <h3 class="slider__item-title">Перфораторы</h3>
+                  <p class="slider__item-text">Настоящие мужские игрушки</p>
+                </div>
+                <a class="slider__button button button-primary" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
               </div>
-              <a class="slider__button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-            </li>
-            <li class="slider__item">
-              <div class="slider__item-info">
-                <h3 class="slider__item-title">Дрели</h3>
-                <p class="slider__item-text">Соседям на радость!</p>
+            </section>
+            <section class="slider__item" style="background-image: url('images/slider/drill.jpg')">
+              <div class="slider__item-inner">
+                <div class="slider__item-info">
+                  <h3 class="slider__item-title">Дрели</h3>
+                  <p class="slider__item-text">Соседям на радость!</p>
+                </div>
+                <a class="slider__button button button-primary" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
               </div>
-              <a class="slider__button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-            </li>
-          </ul>
+            </section>
+          </div>
         </div>
       </div>
     </section>
@@ -408,6 +413,8 @@
   </footer>
 
   <!-- scripts and js libs -->
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
