@@ -328,7 +328,7 @@
               <img width="300" height="158" src="images/map.png"
                 alt="Магазин по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
             </p>
-            <a class="contacts__button button button--primary" href="blank.html">Заблудились? Напишите нам!</a>
+            <a class="contacts__button button button--primary open-contact-modal" href="blank.html">Заблудились? Напишите нам!</a>
           </section>
         </div>
       </div>
@@ -416,6 +416,41 @@
       </div>
     </div>
   </footer>
+
+  <!-- modal window -->
+  <section class="modal modal-contact">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <button class="modal__close-button" type="button">
+      <span class="visually-hidden">Закрыть окно</span>
+    </button>
+    <form class="contact-form" action="#" method="post">
+      <div class="modal__body contact-form__body">
+        <p class="contact-form__item">
+          <label class="contact-form__label" for="contact-name-input">Ваше имя:</label>
+          <input class="contact-form__field contact-form__input" id="contact-name-input" type="text" name="contact-name" placeholder="Представьтесь, пожалуйста" required>
+        </p>
+        <p class="contact-form__item">
+          <label class="contact-form__label" for="contact-email-input">Ваш e-mail:</label>
+          <input class="contact-form__field contact-form__input" id="contact-email-input" type="email" name="contact-email"
+            placeholder="Для отправки ответа" required>
+        </p>
+        <p class="contact-form__item contact-form__item-big">
+          <label class="contact-form__label" for="contact-message-textarea">Текст письма:</label>
+          <textarea class="contact-form__field contact-form__textarea" id="contact-message-textarea" name="contact-message" placeholder="В свободной форме" cols="30" rows="10"></textarea>
+        </p>
+      </div>
+      <div class="modal__footer">
+        <button class="contact-form__button button button--primary" type="submit">Отправить</button>
+      </div>
+    </form>
+  </section>
+  <!-- <section class="modal">
+    <button class="modal__close-button" type="button">
+      <span class="visually-hidden">Закрыть окно</span>
+    </button>
+    <div class="modal__body"></div>
+    <div class="modal__footer"></div>
+  </section> -->
 
   <!-- scripts and js libs -->
   <script src="js/jquery-3.6.4.min.js"></script>

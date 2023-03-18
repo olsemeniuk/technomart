@@ -1,5 +1,6 @@
 $(function () {
 
+  // slider
   $('.slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -11,6 +12,7 @@ $(function () {
     autoplay: true,
   });
 
+  // tabs
   const tabButton = document.querySelectorAll('.tabs__button'),
         tabSection = document.querySelectorAll('.tabs__section');
 
@@ -31,6 +33,17 @@ $(function () {
       }
     })
   })
+
+  // contact modal
+  $('.open-contact-modal').click(function(e) {
+    e.preventDefault();
+
+    $('.modal-contact').addClass('modal--active');
+  });
+
+  $('.modal__close-button').click(function() {
+    $('.modal').removeClass('modal--active');
+  });
 
 });
 

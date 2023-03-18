@@ -1996,6 +1996,125 @@ textarea {
 }
 
 
+/* modal window */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+  width: 622px;
+  min-height: 200px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background-color: var(--basic-white);
+  border-top: 7px solid var(--accent);
+  box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
+  transform: translate(-50%, -50%);
+}
+
+.modal--active {
+  display: block;
+  animation: modalActive 0.4s;
+}
+
+.modal-contact {}
+
+.modal__close-button {
+  position: absolute;
+  top: 8px;
+  right: 9px;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__close-button::before,
+.modal__close-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 27px;
+  height: 4px;
+  background-color: var(--accent);
+}
+
+.modal__close-button::before {
+  transform: translate(-50%, -50%) rotateZ(45deg);
+}
+
+.modal__close-button::after {
+  transform: translate(-50%, -50%) rotateZ(-45deg);
+}
+
+.modal__body {
+  padding: 46px 81px 37px;
+}
+
+.modal__footer {
+  padding: 37px 81px;
+  background-color: #f4f4f4;
+}
+
+.contact-form {}
+
+.contact-form__body {
+  display: grid;
+  grid-template-columns: repeat(2, 220px);
+  gap: 20px;
+}
+
+.contact-form__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.contact-form__label {
+  margin-bottom: 10px;
+  font: 400 18px/18px var(--accent-font);
+}
+
+.contact-form__field {
+  padding: 8px 14px 9px;
+  line-height: 18px;
+  color: var(--basic-black);
+  border: 1px solid #dee3e4;
+  border-radius: 3px;
+}
+
+.contact-form__field::placeholder {
+  font: 400 13px/18px var(--main-font);
+  color: #a9a9a9;
+}
+
+.contact-form__field:hover {
+  background-color: var(--basic-grey);
+}
+
+.contact-form__field:focus {
+  outline: 3px solid var(--basic-dark);
+  outline-offset: -3px;
+}
+
+.contact-form__input {}
+
+.contact-form__item-big {
+  grid-column: 1/-1;
+}
+
+.contact-form__textarea {
+  height: 115px;
+}
+
+.contact-form__button {
+  width: 100%;
+}
+
+
 /*====================
     ANIMATIONS
   ==================== */
@@ -2005,6 +2124,18 @@ textarea {
   }
 
   to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalActive {
+  from {
+    transform: translate(-50%, calc(-50% - 40px));
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(-50%, -50%);
     opacity: 1;
   }
 }
