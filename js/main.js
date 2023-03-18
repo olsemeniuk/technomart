@@ -35,15 +35,19 @@ $(function () {
   })
 
   // contact modal
-  $('.open-contact-modal').click(function(e) {
-    e.preventDefault();
+  const openModal = (modalName, openButton) => {
+    openButton.click(function(e) {
+      e.preventDefault();
+      $('.modal').removeClass('modal--active');
+      modalName.addClass('modal--active');
+    });
+  };
 
-    $('.modal-contact').addClass('modal--active');
-  });
-
-  $('.modal__close-button').click(function() {
+  $('.modal-close').click(function () {
     $('.modal').removeClass('modal--active');
   });
 
+  openModal($('#modal-contact'), $('.open-contact-modal'));
+  openModal($('.modal-map'), $('.contacts__map'));
 });
 

@@ -324,11 +324,12 @@
           <section class="contacts info__section">
             <h2 class="info__title title">КОНТАКТЫ</h2>
             <p class="contacts__text">Вы можете забрать товар сами, <br> заехав в наш офис:</p>
-            <p class="contacts__map">
+            <a class="contacts__map" href="#">
               <img width="300" height="158" src="images/map.png"
                 alt="Магазин по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
-            </p>
-            <a class="contacts__button button button--primary open-contact-modal" href="blank.html">Заблудились? Напишите нам!</a>
+            </a>
+            <a class="contacts__button button button--primary open-contact-modal" href="#">Заблудились? Напишите
+              нам!</a>
           </section>
         </div>
       </div>
@@ -417,32 +418,46 @@
     </div>
   </footer>
 
-  <!-- modal window -->
-  <section class="modal modal-contact">
+  <!-- modal windows -->
+  <section class="modal modal-window" id="modal-contact">
     <h2 class="visually-hidden">Форма обратной связи</h2>
-    <button class="modal__close-button" type="button">
+    <button class="modal-close" type="button">
       <span class="visually-hidden">Закрыть окно</span>
     </button>
     <form class="contact-form" action="#" method="post">
       <div class="modal__body contact-form__body">
         <p class="contact-form__item">
           <label class="contact-form__label" for="contact-name-input">Ваше имя:</label>
-          <input class="contact-form__field contact-form__input" id="contact-name-input" type="text" name="contact-name" placeholder="Представьтесь, пожалуйста" required>
+          <input class="contact-form__field" id="contact-name-input" type="text" name="contact-name"
+            placeholder="Представьтесь, пожалуйста" required>
         </p>
         <p class="contact-form__item">
           <label class="contact-form__label" for="contact-email-input">Ваш e-mail:</label>
-          <input class="contact-form__field contact-form__input" id="contact-email-input" type="email" name="contact-email"
+          <input class="contact-form__field" id="contact-email-input" type="email" name="contact-email"
             placeholder="Для отправки ответа" required>
         </p>
         <p class="contact-form__item contact-form__item-big">
           <label class="contact-form__label" for="contact-message-textarea">Текст письма:</label>
-          <textarea class="contact-form__field contact-form__textarea" id="contact-message-textarea" name="contact-message" placeholder="В свободной форме" cols="30" rows="10"></textarea>
+          <textarea class="contact-form__field contact-form__textarea" id="contact-message-textarea"
+            name="contact-message" placeholder="В свободной форме" cols="30" rows="10"></textarea>
         </p>
       </div>
       <div class="modal__footer">
         <button class="contact-form__button button button--primary" type="submit">Отправить</button>
       </div>
     </form>
+  </section>
+
+  <!-- map -->
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Карта</h2>
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть окно</span>
+    </button>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894615989005!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1679170729430!5m2!1sru!2sua"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
   <!-- <section class="modal">
     <button class="modal__close-button" type="button">
