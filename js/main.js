@@ -43,11 +43,13 @@ $(function () {
     });
   };
 
-  $('.modal-close').click(function () {
+  $('.modal-close, .close-cart').click(function (e) {
+    e.preventDefault();
     $('.modal').removeClass('modal--active');
   });
 
-  openModal($('#modal-contact'), $('.open-contact-modal'));
+  openModal($('.modal-contact'), $('.open-contact-modal'));
   openModal($('.modal-map'), $('.contacts__map'));
+  openModal($('.modal-cart'), $('.open-cart-modal'));
 });
 

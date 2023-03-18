@@ -173,6 +173,26 @@ textarea {
   background-color: #ba2732;
 }
 
+.button--white {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.button--white:focus {
+  outline: 3px solid var(--basic-dark);
+  outline-offset: -3px;
+}
+
+.button--white:hover {
+  color: var(--basic-white);
+  background-color: var(--basic-dark);
+  outline: none;
+}
+
+.button--white:active {
+  opacity: 0.3;
+}
+
 .button-light {
   display: inline-block;
   padding: 9px 5px;
@@ -2131,6 +2151,43 @@ textarea {
   width: 940px;
   line-height: 0;
   box-shadow: 0 0 16px 8px rgba(47, 42, 43, 0.5);
+}
+
+/* modal cart */
+.modal-cart .modal__body {
+  padding: 66px 81px;
+}
+
+.modal-cart__text {
+  position: relative;
+  margin: 0;
+  padding-left: 100px;
+  font: 400 30px/30px var(--accent-font);
+}
+
+.modal-cart__text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 66px;
+  height: 66px;
+  background-image: url("../images/icons/success-icon.png");
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
+
+.modal-cart__footer {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-cart__button {
+  width: 220px;
+}
+
+.modal-cart__button + .modal-cart__button {
+  margin-left: 20px;
 }
 
 /*====================
