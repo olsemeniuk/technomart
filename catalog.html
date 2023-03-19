@@ -42,7 +42,7 @@
           <a class="header__logo logo" href="index.html">
             <img width="220" height="47" src="images/logo.png" alt="Логотип Техномарт.">
           </a>
-          <form class="search-form" action="#" method="get">
+          <form class="search-form" action="#" method="get" aria-label="Поиск по сайту.">
             <label class="visually-hidden" for="search-input">Поиск</label>
             <input class="search-form__input" id="search-input" type="search" name="search" placeholder="Поиск:"
               required>
@@ -67,11 +67,11 @@
         <div class="header__content-inner">
           <p class="header__text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
           <address class="header__address">
-            <a class="header__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <a class="header__tel" href="tel:+78125550555" aria-label="Контактный телефон компании Техномарт: +7 (812) 555-05-55.">+7 (812) 555-05-55</a>
             <p class="header__address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </address>
           <div class="user">
-            <a class="user__profile" href="blank.html">Равшан Джамшутович</a>
+            <a class="user__profile" href="blank.html" aria-label="Профиль пользователя: Равшан Джамшутович.">Равшан Джамшутович</a>
             <p class="user__links">
               <a class="user__link" href="blank.html">Мои заказы</a>
               <a class="user__link" href="blank.html">Личный кабинет</a>
@@ -130,7 +130,7 @@
           <h2 class="filter__title catalog__title catalog__header">ФИЛЬТР:</h2>
           <form class="filter-form" action="#" method="get">
             <fieldset class="filter-form__block">
-              <legend class="filter-form__title">ЦЕНА:</legend>
+              <legend class="filter-form__title">Цена:</legend>
               <div class="range-slider">
                 <div class="reange-slider__block">
                   <div class="range-slider__scale">
@@ -154,36 +154,36 @@
               </div>
             </fieldset>
             <fieldset class="filter-form__block">
-              <legend class="filter-form__title">ПРОИЗВОДИТЕЛИ:</legend>
+              <legend class="filter-form__title">Производители:</legend>
               <ul class="filter-form__switchers-list">
                 <li class="switcher">
                   <input class="switcher__input visually-hidden" id="bosch-checkbox" type="checkbox" name="bosch"
-                    checked>
+                    checked aria-label="Перфораторы от BOSCH.">
                   <label class="switcher__label switcher__label-checkbox" for="bosch-checkbox">BOSCH</label>
                 </li>
                 <li class="switcher">
                   <input class="switcher__input visually-hidden" id="interscol-checkbox" type="checkbox"
-                    name="interscol">
+                    name="interscol" aria-label="Перфораторы от ИНТЕРСКОЛ.">
                   <label class="switcher__label switcher__label-checkbox" for="interscol-checkbox">ИНТЕРСКОЛ</label>
                 </li>
                 <li class="switcher">
                   <input class="switcher__input visually-hidden" id="makita-checkbox" type="checkbox" name="makita"
-                    checked>
-                  <label class="switcher__label switcher__label-checkbox" for="makita-checkbox">MAKIta</label>
+                    checked aria-label="Перфораторы от MAKIta.">
+                  <label class="switcher__label switcher__label-checkbox" for="makita-checkbox">Makita</label>
                 </li>
                 <li class="switcher">
-                  <input class="switcher__input visually-hidden" id="dewalt-checkbox" type="checkbox" name="dewalt">
+                  <input class="switcher__input visually-hidden" id="dewalt-checkbox" type="checkbox" name="dewalt" aria-label="Перфораторы от Dewalt.">
                   <label class="switcher__label switcher__label-checkbox" for="dewalt-checkbox">Dewalt</label>
                 </li>
                 <li class="switcher">
                   <input class="switcher__input visually-hidden" id="hitachi-checkbox" type="checkbox" name="hitachi"
-                    disabled>
+                    disabled aria-label="Перфораторы от Hitachi.">
                   <label class="switcher__label switcher__label-checkbox" for="hitachi-checkbox">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filter-form__block">
-              <legend class="filter-form__title">ПИТАНИЕ:</legend>
+              <legend class="filter-form__title">Питание:</legend>
               <ul class="filter-form__switchers-list">
                 <li class="switcher">
                   <input class="switcher__input visually-hidden" id="accumulator-radio" type="radio" name="supply"
@@ -197,24 +197,24 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="filter-form__btn button-light" type="submit">ПОКАЗАТЬ</button>
+            <button class="filter-form__btn button-light" type="submit" aria-label="Показать фильтрованные результаты">ПОКАЗАТЬ</button>
           </form>
         </section>
         <section class="sort">
           <div class="sort__header catalog__header">
             <h2 class="sort__title catalog__title">СОРТИРОВКА:</h2>
             <p class="sort__sorting-buttons">
-              <button class="sort__button sort__button--active" type="button" tabindex="-1">ПО ЦЕНЕ</button>
-              <button class="sort__button" type="button">ПО ТИПУ</button>
-              <button class="sort__button" type="button">ПО ФУНКЦИОНАЛУ</button>
+              <button class="sort__button sort__button--active" type="button" tabindex="-1" aria-label="Сортировать товары по цене.">По цене</button>
+              <button class="sort__button" type="button" aria-label="Сортировать товары по типу.">По типу</button>
+              <button class="sort__button" type="button" aria-label="Сортировать товары по функционалу.">По функционалу</button>
             </p>
             <p class="sort__order-buttons">
               <button class="sort__order-button sort__order-button--active sort__ascending-order" type="button"
                 tabindex="-1">
-                <span class="visually-hidden">Восходящая сортировка</span>
+                <span class="visually-hidden">Восходящая сортировка товаров</span>
               </button>
               <button class="sort__order-button sort__descending-order" type="button">
-                <span class="visually-hidden">Нисходящая сортировка</span>
+                <span class="visually-hidden">Нисходящая сортировка товаров</span>
               </button>
             </p>
           </div>
@@ -227,8 +227,8 @@
               <s class="product__old-price">22500 Р.</s>
               <b class="product__price">15500 Р.</b>
               <div class="product__buttons">
-                <a class="product__button product__button-buy open-cart-modal" href="blank.html">КУПИТЬ</a>
-                <a class="product__button product__button-save" href="blank.html">В закладки</a>
+                <button class="product__button product__button-buy open-cart-modal" type="button" aria-label="Добавить в корзину перфоратор BOSCH BFG 3000.">КУПИТЬ</button>
+                <button class="product__button product__button-save" type="button" aria-label="Добавить в закладки перфоратор BOSCH BFG 3000.">В закладки</button>
               </div>
             </li>
             <li class="product">
@@ -239,8 +239,8 @@
               <s class="product__old-price">30500 Р.</s>
               <b class="product__price">25500 Р.</b>
               <div class="product__buttons">
-                <a class="product__button product__button-buy open-cart-modal" href="blank.html">КУПИТЬ</a>
-                <a class="product__button product__button-save" href="blank.html">В закладки</a>
+                <button class="product__button product__button-buy open-cart-modal" type="button" aria-label="Добавить в корзину перфоратор BOSCH BFG 6000.">КУПИТЬ</button>
+                <button class="product__button product__button-save" type="button" aria-label="Добавить в закладки перфоратор BOSCH BFG 6000.">В закладки</button>
               </div>
             </li>
             <li class="product new">
@@ -250,8 +250,8 @@
               </p>
               <b class="product__price">12500 Р.</b>
               <div class="product__buttons">
-                <a class="product__button product__button-buy open-cart-modal" href="blank.html">КУПИТЬ</a>
-                <a class="product__button product__button-save" href="blank.html">В закладки</a>
+                <button class="product__button product__button-buy open-cart-modal" type="button" aria-label="Добавить в корзину перфоратор BOSCH BFG 2000.">КУПИТЬ</button>
+                <button class="product__button product__button-save" type="button" aria-label="Добавить в закладки перфоратор BOSCH BFG 2000.">В закладки</button>
               </div>
             </li>
             <li class="product">
@@ -262,8 +262,8 @@
               <s class="product__old-price">22500 Р.</s>
               <b class="product__price">15500 Р.</b>
               <div class="product__buttons">
-                <a class="product__button product__button-buy open-cart-modal" href="blank.html">КУПИТЬ</a>
-                <a class="product__button product__button-save" href="blank.html">В закладки</a>
+                <button class="product__button product__button-buy open-cart-modal" type="button" aria-label="Добавить в корзину перфоратор BOSCH BFG 3000.">КУПИТЬ</button>
+                <button class="product__button product__button-save" type="button" aria-label="Добавить в закладки перфоратор BOSCH BFG 3000.">В закладки</button>
               </div>
             </li>
             <li class="product new">
@@ -274,8 +274,8 @@
               <s class="product__old-price">30500 Р.</s>
               <b class="product__price">25500 Р.</b>
               <div class="product__buttons">
-                <a class="product__button product__button-buy open-cart-modal" href="blank.html">КУПИТЬ</a>
-                <a class="product__button product__button-save" href="blank.html">В закладки</a>
+                <button class="product__button product__button-buy open-cart-modal" type="button" aria-label="Добавить в корзину перфоратор BOSCH BFG 6000.">КУПИТЬ</button>
+                <button class="product__button product__button-save" type="button" aria-label="Добавить в закладки перфоратор BOSCH BFG 6000.">В закладки</button>
               </div>
             </li>
             <li class="product">
@@ -285,8 +285,8 @@
               </p>
               <b class="product__price">12500 Р.</b>
               <div class="product__buttons">
-                <a class="product__button product__button-buy open-cart-modal" href="blank.html">КУПИТЬ</a>
-                <a class="product__button product__button-save" href="blank.html">В закладки</a>
+                <button class="product__button product__button-buy open-cart-modal" type="button" aria-label="Добавить в корзину перфоратор BOSCH BFG 2000.">КУПИТЬ</button>
+                <button class="product__button product__button-save" type="button" aria-label="Добавить в закладки перфоратор BOSCH BFG 2000.">В закладки</button>
               </div>
             </li>
             <li class="product new">
@@ -297,8 +297,8 @@
               <s class="product__old-price">22500 Р.</s>
               <b class="product__price">15500 Р.</b>
               <div class="product__buttons">
-                <a class="product__button product__button-buy open-cart-modal" href="blank.html">КУПИТЬ</a>
-                <a class="product__button product__button-save" href="blank.html">В закладки</a>
+                <button class="product__button product__button-buy open-cart-modal" type="button" aria-label="Добавить в корзину перфоратор BOSCH BFG 3000.">КУПИТЬ</button>
+                <button class="product__button product__button-save" type="button" aria-label="Добавить в закладки перфоратор BOSCH BFG 3000.">В закладки</button>
               </div>
             </li>
             <li class="product">
@@ -309,8 +309,8 @@
               <s class="product__old-price">30500 Р.</s>
               <b class="product__price">25500 Р.</b>
               <div class="product__buttons">
-                <a class="product__button product__button-buy open-cart-modal" href="blank.html">КУПИТЬ</a>
-                <a class="product__button product__button-save" href="blank.html">В закладки</a>
+                <button class="product__button product__button-buy open-cart-modal" type="button" aria-label="Добавить в корзину перфоратор BOSCH BFG 6000.">КУПИТЬ</button>
+                <button class="product__button product__button-save" type="button" aria-label="Добавить в закладки перфоратор BOSCH BFG 6000.">В закладки</button>
               </div>
             </li>
             <li class="product">
@@ -320,23 +320,23 @@
               </p>
               <b class="product__price">12500 Р.</b>
               <div class="product__buttons">
-                <a class="product__button product__button-buy open-cart-modal" href="blank.html">КУПИТЬ</a>
-                <a class="product__button product__button-save" href="blank.html">В закладки</a>
+                <button class="product__button product__button-buy open-cart-modal" type="button" aria-label="Добавить в корзину перфоратор BOSCH BFG 2000.">КУПИТЬ</button>
+                <button class="product__button product__button-save" type="button" aria-label="Добавить в закладки перфоратор BOSCH BFG 2000.">В закладки</button>
               </div>
             </li>
           </ul>
-          <ul class="pagination inline-list">
+          <ul class="pagination inline-list" aria-label="Переключение страниц каталога товаров.">
             <li class="pagination__item">
-              <a class="pagination__link pagination__link--current button-light" tabindex="-1">1</a>
+              <a class="pagination__link pagination__link--current button-light" tabindex="-1" aria-label="Открыть первую страницу.">1</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link button-light" href="blank.html">2</a>
+              <a class="pagination__link button-light" href="blank.html" aria-label="Открыть вторую страницу.">2</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link button-light" href="blank.html">3</a>
+              <a class="pagination__link button-light" href="blank.html" aria-label="Открыть третью страницу.">3</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link pagination__link-text button-light" href="blank.html">СЛЕДУЮЩАЯ</a>
+              <a class="pagination__link pagination__link-text button-light" href="blank.html" aria-label="Открыть следующую страницу.">СЛЕДУЮЩАЯ</a>
             </li>
           </ul>
         </section>
@@ -381,7 +381,7 @@
         <div class="footer__row">
           <address class="footer__address">
             <p class="footer__address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <a class="footer__address-tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <a class="footer__address-tel" href="tel:+78125550555" aria-label="Контактный телефон компании Техномарт: +7 (812) 555-05-55.">+7 (812) 555-05-55</a>
           </address>
           <ul class="footer__products inline-list">
             <li>
@@ -437,7 +437,7 @@
   </footer>
 
   <!-- modal cart -->
-  <div class="modal modal-window modal-cart">
+  <div class="modal modal-window modal-cart" role="alertdialog">
     <button class="modal-close" type="button">
       <span class="visually-hidden">Закрыть окно</span>
     </button>
@@ -446,7 +446,7 @@
     </div>
     <div class="modal__footer modal-cart__footer">
       <a class="modal-cart__button button button--primary" href="#">Оформить заказ</a>
-      <a class="modal-cart__button button button--white close-cart" href="#">Продолжить покупки</a>
+      <button class="modal-cart__button button button--white close-cart" type="button">Продолжить покупки</button>
     </div>
   </div>
 
