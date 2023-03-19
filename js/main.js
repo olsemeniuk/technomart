@@ -14,7 +14,7 @@ $(function () {
 
   // tabs
   const tabButton = document.querySelectorAll('.tabs__button'),
-    tabSection = document.querySelectorAll('.tabs__section');
+        tabSection = document.querySelectorAll('.tabs__section');
 
   tabButton.forEach(btn => {
     btn.addEventListener('click', () => {
